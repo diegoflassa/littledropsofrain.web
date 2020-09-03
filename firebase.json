@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    // Dynamic Links will start with https://littledropsofrain-site.web.app/app
+    "appAssociation": "AUTO",
+    "rewrites": [ { "source": "/app/**", "dynamicLinks": true } ],
+
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
