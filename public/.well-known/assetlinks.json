@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.web.diegoflassa_site.littledropsofrain",
+    "sha256_cert_fingerprints":
+    ["26:78:5C:88:23:38:57:F0:66:50:94:AE:2D:A2:D7:9E:38:E0:47:6E:05:BA:CC:F0:7E:93:10:A9:57:05:B7:A6"]
+  }
+}]
