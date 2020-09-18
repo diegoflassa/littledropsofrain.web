@@ -23,8 +23,8 @@
 			small:     ['481px',    '736px'    ],
 			xsmall:    ['361px',    '480px'    ],
 			xxsmall:   [null,       '360px'    ]
-		});
-
+    });
+    
 	/**
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
@@ -114,8 +114,27 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+      }, 100);
+      // Check the browser´s laguage and redirect to the appropriate one
+      checkLanguage()
+      choosePic()
 		});
+
+    // Chooses one of the pictures to display
+    var myPics = new Array("images/pic01.jpg","images/pic02.jpg","images/pic03.jpg","images/pic04.jpg","images/pic05.jpg","images/pic06.jpg");
+    function choosePic() {
+      var randomNum = Math.floor(Math.random() * myPics.length);
+      if(document.getElementById("mainPicture")!=null){
+        document.getElementById("mainPicture").src = myPics[randomNum];
+      }
+    }
+
+    function checkLanguage() {
+      var userLang = navigator.language || navigator.userLanguage; 
+      if(userLang == "pt-BR"){
+        window.location.replace("index-pt-BR.html");
+      }
+    }
 
 	// Scrolly.
 		$('.scrolly').scrolly();
