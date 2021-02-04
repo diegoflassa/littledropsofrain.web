@@ -3,6 +3,9 @@
     // Dynamic Links will start with https://littledropsofrain-site.web.app/app
     "appAssociation": "AUTO",
     "rewrites": [	{ "source": "/app/**", "dynamicLinks": true },
+					{ "source": "/privacy/**", "dynamicLinks": true },
+					{ "source": "/tos/**", "dynamicLinks": true },
+					{ "source": "/licenses/**", "dynamicLinks": true },
 					{ "source": "/passwordless/**", "dynamicLinks": true } ],
 	
     "public": "public",
